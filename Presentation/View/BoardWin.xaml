@@ -1,0 +1,371 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="Presentation.View.BoardWin"
+        mc:Ignorable="d"
+Title="{Binding Path=boardHeader}" Height="775.236" Width="1030" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Icon="Icons/icons8-strategy-80.png">
+    <Grid Background="#FFEDDFC7" Margin="0,0,0,-37.491" Height="850" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1093">
+        <Grid Height="40" Margin="0,3,28,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="312.8"/>
+                <ColumnDefinition Width="145.6" />
+                <ColumnDefinition Width="59.2" />
+                <ColumnDefinition Width="125.6"/>
+                <ColumnDefinition Width="177.6" />
+                <ColumnDefinition Width="62.4"/>
+                <ColumnDefinition Width="33.6"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0"  Text="{Binding Path=greeting}" FontSize="18" FontFamily="Segoe Print" FontWeight="Bold" HorizontalAlignment="Center" Margin="22,4,0.8,4" Width="290" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center" Height="32"/>
+            <Image Grid.Row="0" Grid.Column="7" ToolTip="Logout" VerticalAlignment="Center"  HorizontalAlignment="Right" Height="34"  Width="35" Source="Icons/icons8-export-400.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="Logout_Click" RenderTransformOrigin="0.5,0.5" Margin="0,3,68.8,3" />
+            <Button Grid.Row="0" Grid.Column="5" x:Name="filterbtn" Cursor="Hand" Content="Filter" VerticalAlignment="Center" HorizontalAlignment="Center" Width="50" Height="25" Click="FilterTasks_Click" Margin="7.2,8,5.2,7">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="CornerRadius"  Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="colName" Grid.Row="0" Grid.Column="3" Cursor="Hand" Content="Add Column" VerticalAlignment="Center" HorizontalAlignment="Left" Width="75" Height="24" Click="AddColumn_Click" Margin="6.4,8,0,8"  >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="CornerRadius"  Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBox x:Name="search" Grid.Row="0" Grid.Column="4" BorderBrush="Black" FontFamily="Comic Sans MS" VerticalContentAlignment="Center" HorizontalAlignment="Right" Height="23"  VerticalAlignment="Center" Width="170" Text="{Binding Path=SearchText,Mode=TwoWay}" FontSize="12" Margin="0,9,3.8,8">
+                <TextBox.Style>
+                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <Style.Resources>
+                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <Label Content="Search by Title, Description" Foreground="Gray" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="0" BorderBrush="Black" FontFamily="Comic Sans MS" VerticalContentAlignment="Center" HorizontalAlignment="Left"  Height="23"  VerticalAlignment="Center" Width="135" Text="{Binding Path=colName}" FontSize="12" Margin="5.2,9,0,8" Grid.Column="1">
+                <TextBox.Style>
+                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <Style.Resources>
+                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <Label Content="Column Name" Foreground="Gray" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox  x:Name="colPosition" Grid.Row="0" Grid.Column="2" BorderBrush="Black" FontFamily="Comic Sans MS" VerticalContentAlignment="Center"  Height="23"  VerticalAlignment="Center" Width="55" Text="{Binding Path=colID}" FontSize="12" HorizontalAlignment="Left" Margin="2.6,9,0,8">
+                <TextBox.Style>
+                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <Style.Resources>
+                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <Label Content="Position" Foreground="Gray" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="6"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Image x:Name="resetbtn" Grid.Row="0" Grid.Column="6" ToolTip="Reset" VerticalAlignment="Center"  HorizontalAlignment="Center" Height="22"  Width="22" Source="Icons/icons8-reset-64.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="ResetFilterTasks_Click" RenderTransformOrigin="0.5,0.5" Margin="0.8,9,10.8,9" />
+            <Image Grid.Row="0" Grid.Column="7" ToolTip="Sort Tasks by DueDate"  VerticalAlignment="Center"  HorizontalAlignment="Center" Height="25"  Width="25" Source="Icons/icons8-sorting-64.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="SortTasks_Click" RenderTransformOrigin="0.5,0.5"  Margin="12.2,7,110.8,8"/>
+
+        </Grid>
+        <ListBox ScrollViewer.VerticalScrollBarVisibility="Disabled" x:Name="myList"  ItemsSource="{Binding Path=board.Columns}" SelectedValue="{Binding Path = SelectedColumn, Mode=TwoWay}" VerticalContentAlignment="Top" Margin="10,45,10,0" Background="#FFEDDFC7" BorderThickness="3" BorderBrush="Black" Width="995" Height="610" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <ListBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </ListBox.Resources>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="Margin" Value="10 7"/>
+                    <Setter Property="Width" Value="309"/>
+                    <Setter Property="Height" Value="569"/>
+                    <Style.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                        </Style>
+                    </Style.Resources>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+
+                    <Border Width="310" Height="570"  HorizontalAlignment="Center" Background="#FFEDDFC7" BorderThickness="3" BorderBrush="Black" CornerRadius="20" Margin="-3">
+                        <StackPanel>
+                            <TextBox ToolTip="Column Name" Text="{Binding Name}" Margin="0,3" TextAlignment="Center" FontSize="18" FontFamily="Comic Sans MS" FontWeight="Bold"  BorderBrush="Black"  Width="260" BorderThickness="2">
+                                <TextBox.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="7"/>
+                                    </Style>
+                                </TextBox.Resources>
+                            </TextBox>
+                            <TextBox ToolTip="Column Limit" Text="{Binding Limit}" Margin="0,3" TextAlignment="Center" FontSize="18" FontFamily="Comic Sans MS"  BorderBrush="Black" BorderThickness="2" Width="260">
+                                <TextBox.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="7"/>
+                                    </Style>
+                                </TextBox.Resources>
+                            </TextBox>
+
+
+                            <ListBox Margin="-2,0,-3,0" Background="#FFEDDFC7"  BorderBrush="Black" BorderThickness="3" VirtualizingPanel.IsVirtualizing="False" Name="ListBox2" ItemsSource="{Binding Path=Tasks}" SelectedItem="{Binding Path=SelectedTask}"  ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Height="458">
+
+                                <ListBox.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListBoxItem}" >
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsVisible}" Value="False">
+                                                <Setter Property="Visibility" Value="Hidden"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Padding" Value="0"/>
+                                        <Setter Property="Margin" Value="6"/>
+                                        <Style.Resources>
+                                            <Style TargetType="Border">
+                                                <Setter Property="CornerRadius" Value="20"/>
+                                                <Setter Property="Background" Value="Transparent"/>
+                                                <Setter Property="BorderBrush" Value="Transparent"/>
+                                                <Setter Property="BorderThickness" Value="0"/>
+                                            </Style>
+                                        </Style.Resources>
+                                    </Style>
+
+                                </ListBox.ItemContainerStyle>
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border BorderBrush="{Binding Path=TaskBorderColor, Mode=OneWay}" BorderThickness="3" Background="{Binding Path=TaskBackground, Mode=OneWay}" Width="270" CornerRadius="15">
+
+                                            <StackPanel  Orientation="Vertical">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="85"/>
+                                                        <ColumnDefinition />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                    </Grid.RowDefinitions>
+                                                    <Label Content="ID:" Grid.Column="0" Grid.Row="0"  FontFamily="Comic Sans MS" />
+                                                    <TextBlock Text="{Binding Path=Id}" Grid.Column="1" Grid.Row="0" Height="16" HorizontalAlignment="Center"  FontFamily="Comic Sans MS" FontWeight="Bold"/>
+                                                    <Label Content="Title:" Grid.Column="0" Grid.Row="1"  FontFamily="Comic Sans MS"/>
+                                                    <TextBox Text="{Binding Path=Title}"  HorizontalAlignment="Left" Width="155" Height="20" AcceptsReturn="True"  Grid.Column="1" Grid.Row="1"  FontFamily="Comic Sans MS">
+                                                        <TextBox.Resources>
+                                                            <Style TargetType="{x:Type Border}">
+                                                                <Setter Property="CornerRadius" Value="4"/>
+                                                            </Style>
+                                                        </TextBox.Resources>
+                                                    </TextBox>
+                                                    <Label Content="Descriprion:" Grid.Column="0" Grid.Row="2"  FontFamily="Comic Sans MS"/>
+
+                                                    <TextBox x:Name="descTextBox" Text="{Binding Path=Description}"  VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" Width="155" Height="40" AcceptsReturn="True" TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" FontFamily="Comic Sans MS">
+                                                        <TextBox.Resources>
+                                                            <Style TargetType="{x:Type Border}">
+                                                                <Setter Property="CornerRadius" Value="4"/>
+                                                            </Style>
+                                                        </TextBox.Resources>
+                                                    </TextBox>
+                                                    <Image ToolTip="Full Description" HorizontalAlignment="Center" Margin="156,0,0,0" Grid.Column="1" Grid.Row="2" Height="20" VerticalAlignment="Center" Width="20" Source="Icons/search.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="SowDescBtn" RenderTransformOrigin="0.5,0.5"/>
+
+                                                    <Label Content="DueDate:" Grid.Column="0" Grid.Row="3"  FontFamily="Comic Sans MS"/>
+                                                    <TextBox Text="{Binding Path=DueDate}" HorizontalAlignment="Left" Width="155" Height="20" AcceptsReturn="True" TextWrapping="Wrap" Grid.Column="1" Grid.Row="3" FontFamily="Comic Sans MS">
+                                                        <TextBox.Resources>
+                                                            <Style TargetType="{x:Type Border}">
+                                                                <Setter Property="CornerRadius" Value="4"/>
+                                                            </Style>
+                                                        </TextBox.Resources>
+                                                    </TextBox>
+                                                    <Label Content="Created On:" Grid.Column="0" Grid.Row="4" FontFamily="Comic Sans MS"/>
+                                                    <TextBlock Text="{Binding Path=CreationTime}" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="4" Height="16" FontWeight="Bold" FontFamily="Comic Sans MS"  />
+                                                    <Label Content="Assignee:" Grid.Column="0" Grid.Row="5"  FontFamily="Comic Sans MS"/>
+                                                    <TextBox Text="{Binding Path=Assignee}"  HorizontalAlignment="Left" Width="155" Height="20" AcceptsReturn="True" TextWrapping="Wrap" Grid.Column="1" Grid.Row="5" FontFamily="Comic Sans MS">
+                                                        <TextBox.Resources>
+                                                            <Style TargetType="{x:Type Border}">
+                                                                <Setter Property="CornerRadius" Value="4"/>
+                                                            </Style>
+                                                        </TextBox.Resources>
+                                                    </TextBox>
+                                                    <Image ToolTip="Remove Task" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="6"  Height="30" Margin="0" VerticalAlignment="Center" Width="30" Source="Icons/icons8-delete-100.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="RemoveTask_Click"/>
+                                                    <Image ToolTip="Advance Task" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="6" Height="45" VerticalAlignment="Center" Width="45" Source="Icons/icons8-advance-64.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="advanceTask_Click" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,2"/>
+
+                                                </Grid>
+                                            </StackPanel>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <Grid Width="90" Height="60" Margin="0,-7,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <Image ToolTip="Move Column Left" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Height="60"  VerticalAlignment="Center" Width="20" Source="Icons/scroll.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="MoveColumnLeft_Click" Margin="0,0,0,8"/>
+                                <Image ToolTip="Move Column Right" Grid.Row="0" x:Name="moveRight" HorizontalAlignment="Left" Height="60"  VerticalAlignment="Center" Width="20" Source="Icons/scroll.png" Cursor="Hand" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="MoveColumnRight_Click" Grid.ColumnSpan="2" Margin="28,0,0,8">
+                                    <Image.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="180"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Image.RenderTransform>
+                                </Image>
+                                <Image ToolTip="Remove Column" Grid.Column="1" Grid.Row="0" Margin="0,0,0,8" HorizontalAlignment="Center" Height="25"  VerticalAlignment="Center" Width="25" Source="Icons/quit.png" Cursor="Hand" Stretch="UniformToFill" MouseLeftButtonDown="RemoveColumn_Click"/>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal">
+                    </StackPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+        <GroupBox Header="Add New Task"  FontSize="12" HorizontalAlignment="Left" Height="70" Margin="10,658,0,0" VerticalAlignment="Top" Width="995" BorderBrush="Black" BorderThickness="3" FontFamily="Comic Sans MS">
+            <GroupBox.Resources>
+                <Style TargetType="{x:Type Border}" >
+                    <Setter Property="CornerRadius"  Value="15"/>
+                </Style>
+            </GroupBox.Resources>
+            <Grid Margin="-33,-13,-67.8,-51" >
+                <TextBox   BorderBrush="Black" FontFamily="Comic Sans MS" VerticalContentAlignment="Center" HorizontalAlignment="Right" Height="23"  VerticalAlignment="Center" Width="205" Text="{Binding Path=taskTitle}" FontSize="12" Margin="0,22,836.491,65.255">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                            <Style.Resources>
+                                <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                    <VisualBrush.Visual>
+                                        <Label Content="Task Title" Foreground="Gray" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Style.Resources>
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                    <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                                </Trigger>
+                                <Trigger Property="Text" Value="{x:Null}">
+                                    <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused" Value="True">
+                                    <Setter Property="Background" Value="White" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="6"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox   BorderBrush="Black" FontFamily="Comic Sans MS" VerticalContentAlignment="Center" HorizontalAlignment="Right" Height="23"  VerticalAlignment="Center" Width="518" Text="{Binding Path=taskDesc}" FontSize="12" Margin="0,21,303.491,66.255">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                            <Style.Resources>
+                                <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                    <VisualBrush.Visual>
+                                        <Label Content="Task Description (Optional)" Foreground="Gray" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Style.Resources>
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                    <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                                </Trigger>
+                                <Trigger Property="Text" Value="{x:Null}">
+                                    <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused" Value="True">
+                                    <Setter Property="Background" Value="White" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="6"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <DatePicker ToolTip="Select a Due Date" HorizontalAlignment="Left" Margin="802,18,0,0" Width="145" Text="{Binding Path=taskDueDate, Mode=OneWayToSource, StringFormat=\{0:d\}}" Height="30" VerticalAlignment="Top" />
+                <Image  ToolTip="Add Task" VerticalAlignment="Center"  HorizontalAlignment="Center" Height="40"  Width="40" Source="Icons/icons8-add-property-64.png" Cursor="Hand" MouseLeftButtonDown="addTask_Click" RenderTransformOrigin="0.5,0.5" Stretch="UniformToFill" Margin="960,14,84,58" />
+
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
+

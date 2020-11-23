@@ -1,0 +1,107 @@
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\Presentation.exe
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\Presentation.pdb
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\log4net.dll
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\System.Data.SQLite.dll
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\IntroSE.Kanban.Backend.pdb
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\log4net.xml
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\System.Data.SQLite.xml
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\BoardWin.baml
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\BoardWin.g.cs
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\LoginWin.g.cs
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\App.g.cs
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation_Content.g.cs
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation_MarkupCompile.cache
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation_MarkupCompile.lref
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\LoginWin.baml
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.g.resources
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.exe
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.pdb
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\IntroSE.Kanban.Backend.exe
+C:\Users\wiggl\OneDrive\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\IntroSE.Kanban.Backend.exe.config
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\Presentation.exe
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\Presentation.pdb
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\log4net.dll
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\System.Data.SQLite.dll
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\IntroSE.Kanban.Backend.pdb
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\log4net.xml
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\System.Data.SQLite.xml
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\BoardWin.baml
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\BoardWin.g.cs
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\LoginWin.g.cs
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\App.g.cs
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation_Content.g.cs
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation_MarkupCompile.cache
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation_MarkupCompile.lref
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\View\LoginWin.baml
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.g.resources
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.exe
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\IntroSE.Kanban.Backend.dll
+C:\Users\Yazan\Desktop\Kanban\milestones-2-powerrangers\Presentation\bin\Debug\IntroSE.Kanban.Backend.dll.config
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\Presentation.exe
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\Presentation.pdb
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\IntroSE.Kanban.Backend.dll
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\log4net.dll
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\System.Data.SQLite.dll
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\IntroSE.Kanban.Backend.pdb
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\IntroSE.Kanban.Backend.dll.config
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\log4net.xml
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\System.Data.SQLite.xml
+C:\Users\Yazan\Desktop\New folder\Presentation\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\View\BoardWin.baml
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\View\BoardWin.g.cs
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\View\LoginWin.g.cs
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\App.g.cs
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation_Content.g.cs
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation_MarkupCompile.cache
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation_MarkupCompile.lref
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\View\LoginWin.baml
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.g.resources
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.exe
+C:\Users\Yazan\Desktop\New folder\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\Presentation.exe
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\Presentation.pdb
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\IntroSE.Kanban.Backend.dll
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\log4net.dll
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\System.Data.SQLite.dll
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\IntroSE.Kanban.Backend.pdb
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\IntroSE.Kanban.Backend.dll.config
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\log4net.xml
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\System.Data.SQLite.xml
+C:\Users\Yazan\Desktop\new proj\Presentation\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\View\BoardWin.baml
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\View\BoardWin.g.cs
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\View\LoginWin.g.cs
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\App.g.cs
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation_Content.g.cs
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation_MarkupCompile.cache
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation_MarkupCompile.lref
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\View\LoginWin.baml
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.g.resources
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.exe
+C:\Users\Yazan\Desktop\new proj\Presentation\obj\Debug\Presentation.pdb
